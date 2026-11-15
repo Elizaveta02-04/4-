@@ -1,0 +1,157 @@
+@font-face {
+    font-family: YR-Speed ;
+    src: url(../font/YR-Speed-Arabic.otf);
+}
+@font-face {
+    font-family: V3-Light;
+    src: url(../font/00361/00361_V3-Light.ttf);
+}
+@font-face {
+    font-family: pokemon ;
+    src: url(../font/pokemon-sha/Pokemon\ SHA.otf);
+}
+body{
+    background: rgb(11, 13, 86);
+}
+/*Общий контейнер*/
+.container{
+    display: flex;
+    flex-direction: column;
+    flex:1 0 auto;
+}
+
+/*Шапка*/
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Логотип */
+.logo {
+  background-image: url("../img/севе.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+height: auto;
+  width: 20%;
+  aspect-ratio: 2 / 1;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(154,147,140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1)
+}
+
+/*Меню*/
+.nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.5em + 1vw);
+    color: white;
+    flex-grow: 1;
+   font-family:  pokemon;
+}
+
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.nav-item:hover{
+    color:#00ff5e;
+    text-shadow: 
+    0 0 5px #fff, /* Основная белая тень */
+    0 0 10px #07fcf898, /* Более размытая голубая тень */
+    0 0 15px #2580a0; /* Ещё более широкая зелёная тень */
+}
+
+/*Второй блок*/
+.bg-line{
+    background-image: url("../img/териберка.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+.head{
+     font-family:YR-Speed;
+     font-size: calc(1.1rem + 3.6vw);
+    color: rgb(100, 198, 234);
+    text-shadow: 3px 2px 1px rgb(11, 15, 46);
+    text-align: center;
+    transform: translateY(-7px);;
+}
+
+/*Шахматка*/
+.line{
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+}
+.img1{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.text1{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+    font-family: V3-Light;
+}
+.img2{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+
+.img2 img, .img1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.text2{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+    text-align: center;
+    font-family: V3-Light;
+}
+footer{
+    color: #FFF0F5;
+    display: flex;
+    width: 100%;
+    background-color:rgb(46, 68, 180);
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    font-family: pokemon;
+}
+.footer-nav-item{
+    font-size: calc(0.2em + 1vw);
+}
+.icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-nav-item:hover{
+    color:#08c979;
+    text-shadow: 
+    0 0 5px #fff, /* Основная белая тень */
+   0 0 8px #5d83e6b4, /* Более размытая голубая тень */
+    0 0 15px #0d59e8b4; /* Ещё более широкая синяя тень */
+}
+.icon-item:hover{
+    color:#1e177c;
+    text-shadow: 
+    0 0 1px #fff, /* Основная белая тень */
+    0 0 8px #1772a3b4, /* Более размытая синяя тень */
+    0 0 15px #0add8cb4; /* Ещё более широкая зеленая*/
+}
